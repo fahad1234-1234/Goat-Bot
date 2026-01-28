@@ -4,7 +4,7 @@ Goat.autoRestart1=Bot will auto restart in %1
 Goat.autoRestart2=Bot will auto restart by cron job: %1
 Goat.googleApiTokenExpired=Google API refresh token has expired or been revoked, please get a new token at https://developers.google.com/oauthplayground/
 
-# bot/login/login.js
+# bot/login/login.dev.js
 login.currentlyLogged=Login in progress
 login.notFoundDirAccount=Cannot find file %1
 login.loginToken=Login with access token
@@ -96,13 +96,40 @@ handlerEvents.onlyAdminBot=❌ | Currently only bot's admin can use bot
 handlerEvents.commandNotFound=Command "%1" does not exist, type %2help to see all available commands
 handlerEvents.commandNotFound2=The command you are using does not exist, type %1help to see all available commands
 handlerEvents.commandSyntaxError=The command you are using is wrong syntax, please type %1help %2 to see the details of how to use this command
+
 handlerEvents.onlyAdmin=❌ | Only group administrators can use the command "%1"
 handlerEvents.onlyAdminToUseOnReply=❌ | Only group administrators can use the reply function of the command "%1"
 handlerEvents.onlyAdminToUseOnReaction=❌ | Only group administrators can use the reaction function of the command "%1"
+
 handlerEvents.onlyAdminBot2=❌ | Only bot's admin can use the command "%1"
 handlerEvents.onlyAdminBot2ToUseOnReply=❌ | Only bot's admin can use the reply function of the command "%1"
 handlerEvents.onlyAdminBot2ToUseOnReaction=❌ | Only bot's admin can use the reaction function of the command "%1"
+
+# 🆕 New Role Hierarchy Messages (Role 2, 3, 4, 5)
+handlerEvents.onlyPremium=🌟 | Only Premium Users can use the command "%1"
+handlerEvents.onlyPremiumToUseOnReply=🌟 | Only Premium Users can use the reply function of the command "%1"
+handlerEvents.onlyPremiumToUseOnReaction=🌟 | Only Premium Users can use the reaction function of the command "%1"
+
+handlerEvents.onlyAdminBot3=👑 | Only Bot Administrators can use this command
+handlerEvents.onlyAdminBot3ToUseOnReply=👑 | Only Bot Administrators can use the reply function of the command "%1"
+handlerEvents.onlyAdminBot3ToUseOnReaction=👑 | Only Bot Administrators can use the reaction function of the command "%1"
+
+handlerEvents.onlyVIP=💎 | Only VIP Users can use this command
+handlerEvents.onlyVIPToUseOnReply=💎 | Only VIP Users can use the reply function of the command "%1"
+handlerEvents.onlyVIPToUseOnReaction=💎 | Only VIP Users can use the reaction function of the command "%1"
+
+handlerEvents.onlyDeveloper=💻 | Only Bot Developers can use this command
+handlerEvents.onlyDeveloperToUseOnReply=💻 | Only Bot Developers can use the reply function of the command "%1"
+handlerEvents.onlyDeveloperToUseOnReaction=💻 | Only Bot Developers can use the reaction function of the command "%1"
+
 handlerEvents.waitingForCommand=⏱ You are in the waiting time to use this command, please come back after %1s
+
+# 🆕 Prefix Only Response: %1 = User Name, %2 = Prefix
+handlerEvents.prefixOnly=Hey %1, you typed just "%2" — but what do you want me to do? Try "%2help" to see available commands.
+
+# 🆕 Command Approval Message: %1 = Command Name
+handlerEvents.pendingApproval=⚠️ Your command "%1" is now pending approval by a group admin. Thank you for your patience!
+
 handlerEvents.errorOccurred=❌ [ %1 ]\nAn error occurred at command "%2"\n\n%3
 handlerEvents.errorOccurred2=❌ [ %1 ]\nAn error occurred at command onChat in command "%2"\n\n%3
 handlerEvents.errorOccurred3=❌ [ %1 ]\nAn error occurred when executing onReply at command "%2"\n\n%3
